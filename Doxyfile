@@ -1,0 +1,29 @@
+PROJECT_NAME           = "SpiderMonkey"
+PROJECT_BRIEF          = "SpiderMonkey is Mozilla’s JavaScript and WebAssembly Engine. It is written in C++, Rust and JavaScript."
+OUTPUT_DIRECTORY       = docs
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+INPUT                  = include/mozjs-150
+FILE_PATTERNS          = *.h
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+QUIET                  = YES
+
+GENERATE_HTMLHELP      = NO
+GENERATE_TREEVIEW      = NO
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_HEADER            = header.html
+HTML_EXTRA_FILES       = doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js
+HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css
+HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5
+PAGE_OUTLINE_PANEL     = NO
+
+EXTRACT_ALL = YES
+STRIP_CODE_COMMENTS = NO
+MULTILINE_CPP_IS_BRIEF = YES
+JAVADOC_BANNER = YES
+ENABLE_PREPROCESSING = YES
+INPUT_FILTER = "sed 's/\/\*/\/\*\*/g'"
+MACRO_EXPANSION = YES
+EXPAND_ONLY_PREDEF = YES
