@@ -1,1 +1,1 @@
---prefix=/ --disable-optimize --enable-debug --disable-shared-js --enable-jit --disable-jemalloc --enable-project=js
+--enable-project=js --prefix=/ --disable-optimize --enable-debug --disable-shared-js --enable-jit --disable-jemalloc --enable-frame-pointers --enable-gczeal
